@@ -20,10 +20,6 @@
             <RowDefinition Height="480"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Spacing="12">
-            <!--<TextBlock Text="Cal LED on 13"/>
-            <TextBlock Text="Warming LED on 19"/>
-            <TextBlock Text="Ready LED on 26"/>
-            <TextBlock Text="Valve Toggle on 23"/>-->
             <Button x:Name="AllInput" Content="Set all as INPUT" HorizontalAlignment="Center" Click="AllInput_click"/>
             <Button x:Name="AllOutput" Content="Set all as OUTPUT" HorizontalAlignment="Center" Click="AllOutput_click"/>
             <Button x:Name="AllHigh" Content="Set all HIGH" HorizontalAlignment="Center" Click="AllHigh_click"/>
