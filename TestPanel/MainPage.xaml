@@ -1,0 +1,91 @@
+﻿<Page
+    x:Class="TestPanel.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestPanel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="800" Height="484">
+
+    <Grid Width="780" Height="480">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="156"/>
+            <ColumnDefinition Width="156"/>
+            <ColumnDefinition Width="156"/>
+            <ColumnDefinition Width="156"/>
+            <ColumnDefinition Width="156"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="480"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Spacing="12">
+            <!--<TextBlock Text="Cal LED on 13"/>
+            <TextBlock Text="Warming LED on 19"/>
+            <TextBlock Text="Ready LED on 26"/>
+            <TextBlock Text="Valve Toggle on 23"/>-->
+            <Button x:Name="AllInput" Content="Set all as INPUT" HorizontalAlignment="Center" Click="AllInput_click"/>
+            <Button x:Name="AllOutput" Content="Set all as OUTPUT" HorizontalAlignment="Center" Click="AllOutput_click"/>
+            <Button x:Name="AllHigh" Content="Set all HIGH" HorizontalAlignment="Center" IsEnabled="False" Click="AllHigh_click"/>
+            <Button x:Name="AllLow" Content="Set all LOW" HorizontalAlignment="Center" IsEnabled="False" Click="AllLow_click"/>
+            <TextBlock Text="IO2 and IO3 may behave oddly, since they're SDA and SCL and have no internal pull resistors" Width="156" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="0">
+            <ToggleSwitch x:Name="IO02_toggle" OffContent="IO2 Input" OnContent="IO2 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO03_toggle" OffContent="IO3 Input" OnContent="IO3 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO04_toggle" OffContent="IO4 Input" OnContent="IO4 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO05_toggle" OffContent="IO5 Input" OnContent="IO5 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO06_toggle" OffContent="IO6 Input" OnContent="IO6 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO07_toggle" OffContent="IO7 Input" OnContent="IO7 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO08_toggle" OffContent="IO8 Input" OnContent="IO8 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO09_toggle" OffContent="IO9 Input" OnContent="IO9 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO10_toggle" OffContent="IO10 Input" OnContent="IO10 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO11_toggle" OffContent="IO11 Input" OnContent="IO11 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO12_toggle" OffContent="IO12 Input" OnContent="IO12 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO13_toggle" OffContent="IO13 Input" OnContent="IO13 Output" Toggled="IO_Direction_Toggled"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="0">
+            <ToggleSwitch x:Name="IO16_toggle" OffContent="IO16 Input" OnContent="IO16 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO17_toggle" OffContent="IO17 Input" OnContent="IO17 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO18_toggle" OffContent="IO18 Input" OnContent="IO18 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO19_toggle" OffContent="IO19 Input" OnContent="IO19 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO20_toggle" OffContent="IO20 Input" OnContent="IO20 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO21_toggle" OffContent="IO21 Input" OnContent="IO21 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO22_toggle" OffContent="IO22 Input" OnContent="IO22 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO23_toggle" OffContent="IO23 Input" OnContent="IO23 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO24_toggle" OffContent="IO24 Input" OnContent="IO24 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO25_toggle" OffContent="IO25 Input" OnContent="IO25 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO26_toggle" OffContent="IO26 Input" OnContent="IO26 Output" Toggled="IO_Direction_Toggled"/>
+            <ToggleSwitch x:Name="IO27_toggle" OffContent="IO27 Input" OnContent="IO27 Output" Toggled="IO_Direction_Toggled"/>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="0">
+            <ToggleSwitch x:Name="IO02_status" OffContent="IO2 Low" OnContent="IO2 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO03_status" OffContent="IO3 Low" OnContent="IO3 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO04_status" OffContent="IO4 Low" OnContent="IO4 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO05_status" OffContent="IO5 Low" OnContent="IO5 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO06_status" OffContent="IO6 Low" OnContent="IO6 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO07_status" OffContent="IO7 Low" OnContent="IO7 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO08_status" OffContent="IO8 Low" OnContent="IO8 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO09_status" OffContent="IO9 Low" OnContent="IO9 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO10_status" OffContent="IO10 Low" OnContent="IO10 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO11_status" OffContent="IO11 Low" OnContent="IO11 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO12_status" OffContent="IO12 Low" OnContent="IO12 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO13_status" OffContent="IO13 Low" OnContent="IO13 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+        </StackPanel>
+        <StackPanel Grid.Column="4" Grid.Row="0">
+            <ToggleSwitch x:Name="IO16_status" OffContent="IO16 Low" OnContent="IO16 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO17_status" OffContent="IO17 Low" OnContent="IO17 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO18_status" OffContent="IO18 Low" OnContent="IO18 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO19_status" OffContent="IO19 Low" OnContent="IO19 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO20_status" OffContent="IO20 Low" OnContent="IO20 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO21_status" OffContent="IO21 Low" OnContent="IO21 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO22_status" OffContent="IO22 Low" OnContent="IO22 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO23_status" OffContent="IO23 Low" OnContent="IO23 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO24_status" OffContent="IO24 Low" OnContent="IO24 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO25_status" OffContent="IO25 Low" OnContent="IO25 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO26_status" OffContent="IO26 Low" OnContent="IO26 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+            <ToggleSwitch x:Name="IO27_status" OffContent="IO27 Low" OnContent="IO27 High" IsEnabled="False" Toggled="IO_Status_Toggled"/>
+        </StackPanel>
+    </Grid>
+
+</Page>

@@ -1,0 +1,1 @@
+C:\Users\dekac\source\repos\TestPanel\TestPanel\TestPanel.csproj;arm
