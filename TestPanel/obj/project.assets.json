@@ -8134,11 +8134,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dekac\\source\\repos\\TestPanel\\TestPanel\\TestPanel.csproj",
+      "projectUniqueName": "D:\\GitHub\\TestPanel\\TestPanel\\TestPanel.csproj",
       "projectName": "TestPanel",
-      "projectPath": "C:\\Users\\dekac\\source\\repos\\TestPanel\\TestPanel\\TestPanel.csproj",
+      "projectPath": "D:\\GitHub\\TestPanel\\TestPanel\\TestPanel.csproj",
       "packagesPath": "C:\\Users\\dekac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dekac\\source\\repos\\TestPanel\\TestPanel\\obj\\",
+      "outputPath": "D:\\GitHub\\TestPanel\\TestPanel\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

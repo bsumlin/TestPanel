@@ -296,9 +296,6 @@ namespace TestPanel
 
         private void AllInput_click(object sender, RoutedEventArgs e)
         {
-            AllHigh.IsEnabled = false;
-            AllLow.IsEnabled = false;
-
             io02.SetDriveMode(GpioPinDriveMode.InputPullDown);
             io03.SetDriveMode(GpioPinDriveMode.InputPullDown);
             io04.SetDriveMode(GpioPinDriveMode.InputPullDown);
@@ -352,8 +349,6 @@ namespace TestPanel
 
         private void AllOutput_click(object sender, RoutedEventArgs e)
         {
-            AllHigh.IsEnabled = true;
-            AllLow.IsEnabled = true;
             io02.SetDriveMode(GpioPinDriveMode.Output);
             io03.SetDriveMode(GpioPinDriveMode.Output);
             io04.SetDriveMode(GpioPinDriveMode.Output);
@@ -431,58 +426,58 @@ namespace TestPanel
 
         private void AllHigh_click(object sender, RoutedEventArgs e)
         {
-            io02.Write(GpioPinValue.High);
-            io03.Write(GpioPinValue.High);
-            io04.Write(GpioPinValue.High);
-            io05.Write(GpioPinValue.High);
-            io06.Write(GpioPinValue.High);
-            io07.Write(GpioPinValue.High);
-            io08.Write(GpioPinValue.High);
-            io09.Write(GpioPinValue.High);
-            io10.Write(GpioPinValue.High);
-            io11.Write(GpioPinValue.High);
-            io12.Write(GpioPinValue.High);
-            io13.Write(GpioPinValue.High);
-            io16.Write(GpioPinValue.High);
-            io17.Write(GpioPinValue.High);
-            io18.Write(GpioPinValue.High);
-            io19.Write(GpioPinValue.High);
-            io20.Write(GpioPinValue.High);
-            io21.Write(GpioPinValue.High);
-            io22.Write(GpioPinValue.High);
-            io23.Write(GpioPinValue.High);
-            io24.Write(GpioPinValue.High);
-            io25.Write(GpioPinValue.High);
-            io26.Write(GpioPinValue.High);
-            io27.Write(GpioPinValue.High);
+            if (IO02_toggle.IsOn == true) { io02.Write(GpioPinValue.High); }
+            if (IO03_toggle.IsOn == true) { io03.Write(GpioPinValue.High); }
+            if (IO04_toggle.IsOn == true) { io04.Write(GpioPinValue.High); }
+            if (IO05_toggle.IsOn == true) { io05.Write(GpioPinValue.High); }
+            if (IO06_toggle.IsOn == true) { io06.Write(GpioPinValue.High); }
+            if (IO07_toggle.IsOn == true) { io07.Write(GpioPinValue.High); }
+            if (IO08_toggle.IsOn == true) { io08.Write(GpioPinValue.High); }
+            if (IO09_toggle.IsOn == true) { io09.Write(GpioPinValue.High); }
+            if (IO10_toggle.IsOn == true) { io10.Write(GpioPinValue.High); }
+            if (IO11_toggle.IsOn == true) { io11.Write(GpioPinValue.High); }
+            if (IO12_toggle.IsOn == true) { io12.Write(GpioPinValue.High); }
+            if (IO13_toggle.IsOn == true) { io13.Write(GpioPinValue.High); }
+            if (IO16_toggle.IsOn == true) { io16.Write(GpioPinValue.High); }
+            if (IO17_toggle.IsOn == true) { io17.Write(GpioPinValue.High); }
+            if (IO18_toggle.IsOn == true) { io18.Write(GpioPinValue.High); }
+            if (IO19_toggle.IsOn == true) { io19.Write(GpioPinValue.High); }
+            if (IO20_toggle.IsOn == true) { io20.Write(GpioPinValue.High); }
+            if (IO21_toggle.IsOn == true) { io21.Write(GpioPinValue.High); }
+            if (IO22_toggle.IsOn == true) { io22.Write(GpioPinValue.High); }
+            if (IO23_toggle.IsOn == true) { io23.Write(GpioPinValue.High); }
+            if (IO24_toggle.IsOn == true) { io24.Write(GpioPinValue.High); }
+            if (IO25_toggle.IsOn == true) { io25.Write(GpioPinValue.High); }
+            if (IO26_toggle.IsOn == true) { io26.Write(GpioPinValue.High); }
+            if (IO27_toggle.IsOn == true) { io27.Write(GpioPinValue.High); }
         }
 
         private void AllLow_click(object sender, RoutedEventArgs e)
         {
-            io02.Write(GpioPinValue.Low);
-            io03.Write(GpioPinValue.Low);
-            io04.Write(GpioPinValue.Low);
-            io05.Write(GpioPinValue.Low);
-            io06.Write(GpioPinValue.Low);
-            io07.Write(GpioPinValue.Low);
-            io08.Write(GpioPinValue.Low);
-            io09.Write(GpioPinValue.Low);
-            io10.Write(GpioPinValue.Low);
-            io11.Write(GpioPinValue.Low);
-            io12.Write(GpioPinValue.Low);
-            io13.Write(GpioPinValue.Low);
-            io16.Write(GpioPinValue.Low);
-            io17.Write(GpioPinValue.Low);
-            io18.Write(GpioPinValue.Low);
-            io19.Write(GpioPinValue.Low);
-            io20.Write(GpioPinValue.Low);
-            io21.Write(GpioPinValue.Low);
-            io22.Write(GpioPinValue.Low);
-            io23.Write(GpioPinValue.Low);
-            io24.Write(GpioPinValue.Low);
-            io25.Write(GpioPinValue.Low);
-            io26.Write(GpioPinValue.Low);
-            io27.Write(GpioPinValue.Low);
+            if (IO02_toggle.IsOn == true) { io02.Write(GpioPinValue.Low); }
+            if (IO03_toggle.IsOn == true) { io03.Write(GpioPinValue.Low); }
+            if (IO04_toggle.IsOn == true) { io04.Write(GpioPinValue.Low); }
+            if (IO05_toggle.IsOn == true) { io05.Write(GpioPinValue.Low); }
+            if (IO06_toggle.IsOn == true) { io06.Write(GpioPinValue.Low); }
+            if (IO07_toggle.IsOn == true) { io07.Write(GpioPinValue.Low); }
+            if (IO08_toggle.IsOn == true) { io08.Write(GpioPinValue.Low); }
+            if (IO09_toggle.IsOn == true) { io09.Write(GpioPinValue.Low); }
+            if (IO10_toggle.IsOn == true) { io10.Write(GpioPinValue.Low); }
+            if (IO11_toggle.IsOn == true) { io11.Write(GpioPinValue.Low); }
+            if (IO12_toggle.IsOn == true) { io12.Write(GpioPinValue.Low); }
+            if (IO13_toggle.IsOn == true) { io13.Write(GpioPinValue.Low); }
+            if (IO16_toggle.IsOn == true) { io16.Write(GpioPinValue.Low); }
+            if (IO17_toggle.IsOn == true) { io17.Write(GpioPinValue.Low); }
+            if (IO18_toggle.IsOn == true) { io18.Write(GpioPinValue.Low); }
+            if (IO19_toggle.IsOn == true) { io19.Write(GpioPinValue.Low); }
+            if (IO20_toggle.IsOn == true) { io20.Write(GpioPinValue.Low); }
+            if (IO21_toggle.IsOn == true) { io21.Write(GpioPinValue.Low); }
+            if (IO22_toggle.IsOn == true) { io22.Write(GpioPinValue.Low); }
+            if (IO23_toggle.IsOn == true) { io23.Write(GpioPinValue.Low); }
+            if (IO24_toggle.IsOn == true) { io24.Write(GpioPinValue.Low); }
+            if (IO25_toggle.IsOn == true) { io25.Write(GpioPinValue.Low); }
+            if (IO26_toggle.IsOn == true) { io26.Write(GpioPinValue.Low); }
+            if (IO27_toggle.IsOn == true) { io27.Write(GpioPinValue.Low); }
         }
     }
 }

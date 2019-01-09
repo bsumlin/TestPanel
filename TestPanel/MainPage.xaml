@@ -26,8 +26,8 @@
             <TextBlock Text="Valve Toggle on 23"/>-->
             <Button x:Name="AllInput" Content="Set all as INPUT" HorizontalAlignment="Center" Click="AllInput_click"/>
             <Button x:Name="AllOutput" Content="Set all as OUTPUT" HorizontalAlignment="Center" Click="AllOutput_click"/>
-            <Button x:Name="AllHigh" Content="Set all HIGH" HorizontalAlignment="Center" IsEnabled="False" Click="AllHigh_click"/>
-            <Button x:Name="AllLow" Content="Set all LOW" HorizontalAlignment="Center" IsEnabled="False" Click="AllLow_click"/>
+            <Button x:Name="AllHigh" Content="Set all HIGH" HorizontalAlignment="Center" Click="AllHigh_click"/>
+            <Button x:Name="AllLow" Content="Set all LOW" HorizontalAlignment="Center" Click="AllLow_click"/>
             <TextBlock Text="IO2 and IO3 may behave oddly, since they're SDA and SCL and have no internal pull resistors" Width="156" TextWrapping="Wrap" HorizontalAlignment="Center"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="0">

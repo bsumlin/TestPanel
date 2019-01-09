@@ -10,7 +10,7 @@
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>0ed78091-8392-450e-8c47-20393c5a31db</PackageIdentityName>
     <PackageIdentityPublisher>CN=dekac</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\dekac\source\repos\TestPanel\TestPanel\obj\ARM\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\GitHub\TestPanel\TestPanel\obj\ARM\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\dekac\source\repos\TestPanel\TestPanel\bin\ARM\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\GitHub\TestPanel\TestPanel\bin\ARM\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>934900F41519297BDB954672D3ACF8B56DC4992D51108AC70C6673FF68DF533B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>0ed78091-8392-450e-8c47-20393c5a31db_1.0.0.0_arm__1756rt1sqsh3t</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>0ed78091-8392-450e-8c47-20393c5a31db_1756rt1sqsh3t!App</RegisteredUserModeAppID>
@@ -27,90 +27,90 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\bin\ARM\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\GitHub\TestPanel\TestPanel\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-09T01:16:49.772</Modified>
+      <Modified>2019-01-09T17:27:31.670</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\bin\ARM\Debug\TestPanel.exe">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\bin\ARM\Debug\TestPanel.exe">
       <PackagePath>entrypoint\TestPanel.exe</PackagePath>
-      <Modified>2019-01-09T01:16:48.134</Modified>
+      <Modified>2019-01-09T17:27:29.500</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dekac\.nuget\packages\runtime.win10-arm.microsoft.netcore.universalwindowsplatform\6.2.2\runtimes\win10-arm\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2018-10-31T15:59:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\Assets\bg.png">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\Assets\bg.png">
       <PackagePath>Assets\bg.png</PackagePath>
       <Modified>2019-01-08T17:53:47.963</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\Assets\big_pi.png">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\Assets\big_pi.png">
       <PackagePath>Assets\big_pi.png</PackagePath>
       <Modified>2019-01-08T17:02:20.578</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2018-11-26T20:35:44.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-11-26T20:35:44.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-11-26T20:35:44.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-11-26T20:35:44.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-11-26T20:35:44.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-11-26T20:35:44.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-11-26T20:35:44.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2019-01-08T16:55:00.911</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\bin\ARM\Debug\TestPanel.xr.xml">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\bin\ARM\Debug\TestPanel.xr.xml">
       <PackagePath>TestPanel.xr.xml</PackagePath>
-      <Modified>2019-01-09T01:16:47.633</Modified>
+      <Modified>2019-01-09T17:27:28.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\bin\ARM\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\bin\ARM\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-01-09T01:16:47.704</Modified>
+      <Modified>2019-01-09T17:27:29.106</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\bin\ARM\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\bin\ARM\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-01-09T01:16:47.705</Modified>
+      <Modified>2019-01-09T17:27:29.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2018-04-20T03:01:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\bin\ARM\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-01-09T01:16:48.794</Modified>
+      <Modified>2019-01-09T17:27:30.432</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\dekac\source\repos\TestPanel\TestPanel\bin\ARM\Debug\Core\TestPanel.exe">
+    <AppxPackagedFile Include="D:\GitHub\TestPanel\TestPanel\bin\ARM\Debug\Core\TestPanel.exe">
       <PackagePath>TestPanel.exe</PackagePath>
-      <Modified>2019-01-09T01:16:49.753</Modified>
+      <Modified>2019-01-09T17:27:31.637</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

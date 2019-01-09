@@ -20,14 +20,14 @@
             <RowDefinition Height="480"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Spacing="12">
-            <TextBlock Text="Cal LED on 13"/>
+            <!--<TextBlock Text="Cal LED on 13"/>
             <TextBlock Text="Warming LED on 19"/>
             <TextBlock Text="Ready LED on 26"/>
-            <TextBlock Text="Valve Toggle on 23"/>
+            <TextBlock Text="Valve Toggle on 23"/>-->
             <Button x:ConnectionId='50' x:Name="AllInput" Content="Set all as INPUT" HorizontalAlignment="Center"                       />
             <Button x:ConnectionId='51' x:Name="AllOutput" Content="Set all as OUTPUT" HorizontalAlignment="Center"                        />
-            <Button x:ConnectionId='52' x:Name="AllHigh" Content="Set all HIGH" HorizontalAlignment="Center" IsEnabled="False"                      />
-            <Button x:ConnectionId='53' x:Name="AllLow" Content="Set all LOW" HorizontalAlignment="Center" IsEnabled="False"                     />
+            <Button x:ConnectionId='52' x:Name="AllHigh" Content="Set all HIGH" HorizontalAlignment="Center"                      />
+            <Button x:ConnectionId='53' x:Name="AllLow" Content="Set all LOW" HorizontalAlignment="Center"                     />
             <TextBlock Text="IO2 and IO3 may behave oddly, since they're SDA and SCL and have no internal pull resistors" Width="156" TextWrapping="Wrap" HorizontalAlignment="Center"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="0">
